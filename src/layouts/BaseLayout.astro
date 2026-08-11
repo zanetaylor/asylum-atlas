@@ -1,0 +1,289 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+const {
+	title,
+	description = "A sourced map of former and surviving U.S. Kirkbride Plan asylum sites.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
+		<meta name="theme-color" content="#19332f" />
+		<title>{title} · Asylum Atlas</title>
+	</head>
+	<body>
+		<header class="site-header">
+			<a class="wordmark" href="/" aria-label="Asylum Atlas home"
+				><span class="wordmark-mark">A</span><span>Asylum<br /><em>Atlas</em></span></a
+			>
+			<nav aria-label="Main navigation">
+				<a href="/">Explore</a>
+				<a href="/about/">About</a>
+				<a href="/sources/">Sources</a>
+			</nav>
+		</header>
+		<main id="main-content"><slot /></main>
+		<footer class="site-footer">
+			<div>
+				<strong>Asylum Atlas</strong><br />A small, sourced directory of U.S. Kirkbride Plan sites.
+			</div>
+			<div class="footer-links">
+				<a href="/about/">About the project</a><a href="/sources/">Research sources</a>
+			</div>
+			<p class="footer-note">
+				Independent historical project. Not affiliated with any listed institution or source.
+			</p>
+		</footer>
+	</body>
+</html>
+<style is:global>
+	@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+	:root {
+		--ink: #19332f;
+		--ink-soft: #46625b;
+		--paper: #f4f1e9;
+		--card: #fbfaf6;
+		--line: #d5d8cc;
+		--rust: #b95738;
+		--gold: #d49b42;
+		--sage: #718c7e;
+		--shadow: 0 12px 35px rgba(25, 51, 47, 0.09);
+		font-family: "DM Sans", system-ui, sans-serif;
+		color: var(--ink);
+		background: var(--paper);
+	}
+	* {
+		box-sizing: border-box;
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		margin: 0;
+		min-width: 320px;
+		background: var(--paper);
+		line-height: 1.55;
+	}
+	a {
+		color: inherit;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 3px;
+	}
+	a:hover {
+		color: var(--rust);
+	}
+	a:focus-visible,
+	button:focus-visible,
+	input:focus-visible,
+	select:focus-visible {
+		outline: 3px solid var(--gold);
+		outline-offset: 3px;
+	}
+	h1,
+	h2,
+	h3,
+	p {
+		margin-top: 0;
+	}
+	h1,
+	h2,
+	h3 {
+		font-family: "Playfair Display", Georgia, serif;
+		line-height: 1.1;
+		letter-spacing: -0.02em;
+	}
+	h1 {
+		font-size: clamp(2.6rem, 6vw, 5.8rem);
+		max-width: 900px;
+		margin-bottom: 1.25rem;
+	}
+	h2 {
+		font-size: clamp(2rem, 4vw, 3.5rem);
+	}
+	h3 {
+		font-size: 1.45rem;
+	}
+	.site-header {
+		min-height: 84px;
+		max-width: 1320px;
+		margin: auto;
+		padding: 1.1rem 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+		border-bottom: 1px solid var(--line);
+	}
+	.wordmark {
+		display: flex;
+		align-items: center;
+		gap: 0.7rem;
+		font-family: "DM Mono", monospace;
+		font-size: 0.9rem;
+		line-height: 0.9;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+	}
+	.wordmark em {
+		font-family: "Playfair Display", serif;
+		text-transform: none;
+		letter-spacing: 0;
+		font-size: 1.5rem;
+	}
+	.wordmark-mark {
+		display: grid;
+		place-items: center;
+		width: 40px;
+		height: 40px;
+		background: var(--ink);
+		color: var(--paper);
+		border-radius: 50%;
+		font-family: "Playfair Display", serif;
+		font-size: 1.5rem;
+	}
+	nav {
+		display: flex;
+		gap: 1.4rem;
+		font-family: "DM Mono", monospace;
+		font-size: 0.72rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	nav a {
+		text-decoration: none;
+	}
+	main {
+		min-height: 70vh;
+	}
+	.site-footer {
+		max-width: 1320px;
+		margin: 0 auto;
+		padding: 2.5rem 2rem;
+		/*border-top: 1px solid var(--line);*/
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 1rem 2rem;
+		color: var(--ink-soft);
+		font-size: 0.9rem;
+	}
+	.site-footer strong {
+		color: var(--ink);
+		font-family: "Playfair Display", serif;
+		font-size: 1.2rem;
+	}
+	.footer-links {
+		display: flex;
+		gap: 1.5rem;
+		align-items: start;
+	}
+	.footer-note {
+		grid-column: 1/-1;
+		margin: 1rem 0 0;
+		font-family: "DM Mono", monospace;
+		font-size: 0.68rem;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+	.eyebrow {
+		color: var(--rust);
+		font:
+			500 0.72rem "DM Mono",
+			monospace;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+	}
+	.button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		border: 1px solid var(--ink);
+		border-radius: 2px;
+		padding: 0.8rem 1.15rem;
+		background: var(--ink);
+		color: var(--paper);
+		font:
+			500 0.75rem "DM Mono",
+			monospace;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		cursor: pointer;
+	}
+	.button:hover {
+		background: var(--rust);
+		border-color: var(--rust);
+		color: white;
+	}
+	.button.secondary {
+		background: transparent;
+		color: var(--ink);
+		border-color: var(--line);
+	}
+	.button.secondary:hover {
+		border-color: var(--ink);
+		background: transparent;
+	}
+	.page-shell {
+		max-width: 1180px;
+		margin: auto;
+		padding: 5rem 2rem;
+	}
+	.prose {
+		max-width: 760px;
+	}
+	.prose p,
+	.prose li {
+		color: var(--ink-soft);
+	}
+	.prose h2 {
+		margin-top: 3.5rem;
+	}
+	.mono {
+		font-family: "DM Mono", monospace;
+	}
+	@media (max-width: 700px) {
+		.site-header {
+			padding: 1rem;
+			align-items: flex-start;
+		}
+		nav {
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			gap: 0.5rem 0.8rem;
+			max-width: 220px;
+		}
+		.site-footer {
+			grid-template-columns: 1fr;
+			padding: 2rem 1rem;
+		}
+		.footer-links {
+			flex-wrap: wrap;
+		}
+		.footer-note {
+			grid-column: auto;
+		}
+		.page-shell {
+			padding: 3.5rem 1rem;
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+		*,
+		*::before,
+		*::after {
+			transition-duration: 0.01ms !important;
+			animation-duration: 0.01ms !important;
+		}
+	}
+</style>

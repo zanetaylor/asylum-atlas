@@ -1,0 +1,12 @@
+{
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"allowJs": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"resolveJsonModule": true,
+		"lib": ["ES2022", "DOM"],
+		"noEmit": true,
+		"strictNullChecks": true
+	}
+}

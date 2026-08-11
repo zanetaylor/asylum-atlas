@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SourceList from "../components/SourceList.astro";
+---
+
+<BaseLayout title="Research sources"
+	><div class="page-shell prose">
+		<p class="eyebrow">Research trail</p><h1>Sources behind the map.</h1><p>
+			These sources support the initial prototype inventory and document the discovery process. Each
+			published site record carries a subset of these references, with claim-level links in the
+			local data.
+		</p><SourceList /><p class="small-note">
+			Access dates are recorded in the data manifest. Links are provided for research verification;
+			the project does not reproduce source narrative.
+		</p>
+	</div></BaseLayout
+>
+<style>
+	.small-note {
+		color: var(--ink-soft);
+		font-size: 0.85rem;
+	}
+</style>

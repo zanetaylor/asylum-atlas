@@ -1,0 +1,12 @@
+{
+	"worktree": {
+		"setup": "pnpm i"
+	},
+	"scripts": {
+		"dev": {
+			"type": "service",
+			"command": "pnpm start --host --port $PASEO_PORT",
+			"port": 7777
+		}
+	}
+}

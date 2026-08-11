@@ -1,0 +1,67 @@
+---
+import sources from "../data/sources.json";
+import type { Source } from "../lib/types";
+const items = sources as Source[];
+---
+
+<ul class="source-list">
+	{
+		items.map((source) => (
+			<li id={source.id}>
+				<>
+					<span class="source-type">{source.type}</span>
+					<div>
+						<>
+							<a href={source.url} target="_blank" rel="noreferrer">
+								{source.title}
+							</a>
+							<br />
+							<span>
+								{source.publisher} · accessed {source.accessed}
+							</span>
+						</>
+					</div>
+				</>
+			</li>
+		))
+	}
+</ul>
+<style>
+	.source-list {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+	.source-list li {
+		display: flex;
+		gap: 1rem;
+		padding: 1rem 0;
+		border-top: 1px solid var(--line);
+		color: var(--ink-soft);
+	}
+	.source-list a {
+		color: var(--ink);
+		font-weight: 600;
+	}
+	.source-list span:not(.source-type) {
+		font-size: 0.85rem;
+	}
+	.source-type {
+		min-width: 120px;
+		color: var(--rust);
+		font:
+			500 0.63rem "DM Mono",
+			monospace;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+	}
+	@media (max-width: 600px) {
+		.source-list li {
+			display: block;
+		}
+		.source-type {
+			display: block;
+			margin-bottom: 0.35rem;
+		}
+	}
+</style>

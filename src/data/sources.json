@@ -1,0 +1,274 @@
+[
+	{
+		"id": "nps-nrhp",
+		"title": "National Register of Historic Places",
+		"publisher": "National Park Service",
+		"url": "https://www.nps.gov/subjects/nationalregister/index.htm",
+		"accessed": "2025-02-14",
+		"type": "government"
+	},
+	{
+		"id": "loc-panorama",
+		"title": "Panoramic View of the Insane Asylum, Athens, Ohio",
+		"publisher": "Library of Congress",
+		"url": "https://www.loc.gov/pictures/item/2007662506/",
+		"accessed": "2025-02-14",
+		"type": "archive"
+	},
+	{
+		"id": "michigan-shpo-traverse",
+		"title": "Traverse City State Hospital Historic District",
+		"publisher": "Michigan State Historic Preservation Office",
+		"url": "https://www.miplace.org/historic-preservation/programs-and-services/national-register-of-historic-places/",
+		"accessed": "2025-02-14",
+		"type": "government"
+	},
+	{
+		"id": "wv-history-weston",
+		"title": "Weston State Hospital",
+		"publisher": "West Virginia Encyclopedia",
+		"url": "https://www.wvencyclopedia.org/articles/1051",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ohio-history-athens",
+		"title": "Athens Asylum",
+		"publisher": "Ohio History Connection",
+		"url": "https://ohiohistory.org/athens-asylum/",
+		"accessed": "2025-02-14",
+		"type": "institutional-archive"
+	},
+	{
+		"id": "mass-dcr-danvers",
+		"title": "Danvers State Hospital",
+		"publisher": "Massachusetts Department of Conservation and Recreation",
+		"url": "https://www.mass.gov/locations/danvers-state-hospital",
+		"accessed": "2025-02-14",
+		"type": "government"
+	},
+	{
+		"id": "oregon-sh-legacy",
+		"title": "Oregon State Hospital Museum of Mental Health",
+		"publisher": "Oregon State Hospital",
+		"url": "https://www.oregon.gov/oha/osh/pages/museum.aspx",
+		"accessed": "2025-02-14",
+		"type": "institutional-archive"
+	},
+	{
+		"id": "ny-omh-utica",
+		"title": "Utica Psychiatric Center / Utica State Hospital",
+		"publisher": "New York State Office of Mental Health",
+		"url": "https://www.omh.ny.gov/omhweb/facilities/",
+		"accessed": "2025-02-14",
+		"type": "government"
+	},
+	{
+		"id": "kirkbride-buildings",
+		"title": "Kirkbride Buildings",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kirkbride-buildings-index",
+		"title": "Kirkbride Buildings: building index",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-buffalo",
+		"title": "Buffalo State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/buffalo/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-cherokee",
+		"title": "Cherokee State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/cherokee/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-clarinda",
+		"title": "Clarinda State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/clarinda/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-dixmont",
+		"title": "Dixmont State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/dixmont/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-fergus-falls",
+		"title": "Fergus Falls State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/fergusfalls/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-greystone",
+		"title": "Greystone Park State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/greystonepark/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-hudson-river",
+		"title": "Hudson River State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/hudsonriver/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-independence",
+		"title": "Independence State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/independence/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-northampton",
+		"title": "Northampton State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/northampton/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-saint-elizabeths",
+		"title": "Saint Elizabeths Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/saint-elizabeths/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-taunton",
+		"title": "Taunton State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/taunton/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "kb-worcester",
+		"title": "Worcester State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "http://www.kirkbridebuildings.com/buildings/worcester/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "wikipedia-topeka-state-hospital",
+		"title": "Topeka State Hospital",
+		"publisher": "Wikipedia",
+		"url": "https://en.wikipedia.org/wiki/Topeka_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "encyclopedia"
+	},
+	{
+		"id": "wikipedia-kalamazoo-regional",
+		"title": "Kalamazoo Regional Psychiatric Hospital",
+		"publisher": "Wikipedia",
+		"url": "https://en.wikipedia.org/wiki/Kalamazoo_Regional_Psychiatric_Hospital",
+		"accessed": "2025-02-14",
+		"type": "encyclopedia"
+	},
+	{
+		"id": "wikidata-kalamazoo-regional",
+		"title": "Kalamazoo Regional Psychiatric Hospital",
+		"publisher": "Wikidata",
+		"url": "https://www.wikidata.org/wiki/Q16998070",
+		"accessed": "2025-02-14",
+		"type": "geospatial"
+	},
+	{
+		"id": "wikipedia-nevada-state-hospital",
+		"title": "Nevada State Hospital",
+		"publisher": "Wikipedia",
+		"url": "https://en.wikipedia.org/wiki/Nevada_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "encyclopedia"
+	},
+	{
+		"id": "asylumprojects-nevada-state-hospital",
+		"title": "Nevada State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php/Nevada_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "rootsweb-nevada-state-hospital",
+		"title": "Nevada State Hospital, Nevada, Missouri",
+		"publisher": "RootsWeb",
+		"url": "https://sites.rootsweb.com/~asylums/nevada_mo/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "rootsweb-asylums",
+		"title": "Asylum Projects",
+		"publisher": "RootsWeb",
+		"url": "https://sites.rootsweb.com/~asylums/index.html060300",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "wikipedia-kirkbride",
+		"title": "Kirkbride Plan",
+		"publisher": "Wikipedia",
+		"url": "https://en.wikipedia.org/wiki/Kirkbride_Plan",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "asylumprojects-st-vincent-state-hospital",
+		"title": "St. Vincent's Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://www.asylumprojects.org/index.php/St._Vincent_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "asylumprojects-eastern-oregon-state-hospital",
+		"title": "Eastern Oregon State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://www.asylumprojects.org/index.php/Eastern_Oregon_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "asylumprojects-st-joseph-state-hospital",
+		"title": "St. Joseph State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://www.asylumprojects.org/index.php?title=St._Joseph_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "kirkbride-fulton",
+		"title": "Fulton State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "https://www.kirkbridebuildings.com/buildings/fulton/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	}
+]
