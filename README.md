@@ -1,6 +1,6 @@
 # Asylum Atlas
 
-Asylum Atlas is a static Astro prototype mapping verified former and surviving U.S. sites associated with the Kirkbride Plan.
+Asylum Atlas is a static Astro prototype mapping verified former and surviving U.S. sites associated with the Kirkbride Plan. WIP.
 
 ## Development
 
@@ -16,10 +16,6 @@ Asylum Atlas is a static Astro prototype mapping verified former and surviving U
 
 The map uses MapLibre GL and OpenFreeMap’s public style at runtime. The searchable result list remains useful if WebGL or the basemap is unavailable, and the full site record is shown in the map detail panel. Set `PUBLIC_MAP_STYLE_URL` to replace the style endpoint.
 
-## Paseo
-
-`paseo.json` defines the worktree setup and a managed development service. New worktrees install dependencies with `pnpm install --frozen-lockfile`; start the project with `paseo script start dev --cwd .`. Paseo supplies `$PASEO_PORT` so multiple worktrees can run without port collisions.
-
 ## Data and research rules
 
 Structured data lives in `src/data/sites.json`, `src/data/sources.json`, and `src/data/images.json`. Add a stable site ID and slug, cite the record, label coordinate precision, and leave uncertain fields `null` or `unknown`. Do not copy source prose. The validator rejects invalid coordinates, dates, statuses, duplicate IDs, broken citations, unsupported image licenses, and missing local image files.
@@ -31,13 +27,11 @@ Images belong in `public/` and must include complete metadata in `images.json`: 
 The initial discovery inventory used:
 
 - [Kirkbride Buildings](http://www.kirkbridebuildings.com/)
-- [RootsWeb Asylum Projects](https://sites.rootsweb.com/~asylums/index.html060300)
-- [Wikipedia: Kirkbride Plan](https://en.wikipedia.org/wiki/Kirkbride_Plan)
+- [Historic Asylums](https://sites.rootsweb.com/~asylums/index.html060300)
+- [Asylum Projects](https://asylumprojects.org/)
 
 Published records also reference National Park Service / National Register material, the Library of Congress, state preservation offices, state agencies, institutional archives, and historical encyclopedias. See the in-site [sources page](https://asylum-atlas.example/sources/) and the local source manifest for the full list.
 
-The current inventory includes all 16 named building pages in the Kirkbride Buildings index, plus nine additional records from the original prototype and requested additions. The index’s location-only and question-marked candidate lists are intentionally held back until each location has independently verified coordinates and claim-level metadata.
+## Note
 
-## Scope note
-
-“All” means all verified U.S. sites discoverable through the documented research process, not every asylum influenced by Kirkbride’s ideas. This is an informational historical directory, not an access guide, and is not affiliated with listed institutions or source sites.
+This is an informational historical directory, not an access guide, and is not affiliated with listed institutions or source sites.
