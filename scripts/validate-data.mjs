@@ -23,7 +23,13 @@ const statuses = new Set([
 	"unknown",
 ]);
 const precisions = new Set(["exact", "campus", "approximate"]);
-const imageLicenses = new Set(["Public Domain", "CC0", "CC BY", "CC BY-SA"]);
+const imageLicenses = new Set([
+	"Public Domain",
+	"CC0",
+	"CC BY",
+	"CC BY-SA",
+	"Rights status unclear",
+]);
 const errors = [];
 const sourceIds = new Set();
 

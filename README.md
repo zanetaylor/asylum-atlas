@@ -20,7 +20,7 @@ The map uses MapLibre GL and OpenFreeMap’s public style at runtime. The search
 
 Structured data lives in `src/data/sites.json`, `src/data/sources.json`, and `src/data/images.json`. Add a stable site ID and slug, cite the record, label coordinate precision, and leave uncertain fields `null` or `unknown`. Do not copy source prose. The validator rejects invalid coordinates, dates, statuses, duplicate IDs, broken citations, unsupported image licenses, and missing local image files.
 
-Images belong in `public/` and must include complete metadata in `images.json`: original URL, creator, description/alt text, license URL, and visible attribution. Accepted licenses are Public Domain, CC0, CC BY, and CC BY-SA. Text-only records are expected when no compliant image can be verified.
+Images belong in `public/` and must include complete metadata in `images.json`: original URL, creator, description/alt text, license URL, and visible attribution. Accepted licenses are Public Domain, CC0, CC BY, and CC BY-SA. A small number of historically useful leads may be included with `Rights status unclear`; these are not cleared for publication and require rights confirmation before deployment.
 
 ## Sources
 

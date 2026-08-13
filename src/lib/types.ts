@@ -28,7 +28,7 @@ export interface ImageCredit {
 	title: string;
 	description: string;
 	sourceUrl: string;
-	license: "Public Domain" | "CC0" | "CC BY" | "CC BY-SA";
+	license: "Public Domain" | "CC0" | "CC BY" | "CC BY-SA" | "Rights status unclear";
 	licenseUrl: string;
 	attribution: string;
 	date?: string;

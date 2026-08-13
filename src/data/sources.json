@@ -56,14 +56,6 @@
 		"type": "institutional-archive"
 	},
 	{
-		"id": "ny-omh-utica",
-		"title": "Utica Psychiatric Center / Utica State Hospital",
-		"publisher": "New York State Office of Mental Health",
-		"url": "https://www.omh.ny.gov/omhweb/facilities/",
-		"accessed": "2025-02-14",
-		"type": "government"
-	},
-	{
 		"id": "kirkbride-buildings",
 		"title": "Kirkbride Buildings",
 		"publisher": "Kirkbride Buildings",

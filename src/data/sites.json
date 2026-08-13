@@ -15,7 +15,7 @@
 		"status": "preserved-reuse",
 		"presentUse": "Ohio University and community uses",
 		"note": "The surviving central building is part of the former state hospital campus known today as The Ridges.",
-		"images": [],
+		"images": ["/images/athens-lunatic-asylum-front.jpg"],
 		"sourceRefs": ["loc-panorama", "ohio-history-athens", "nps-nrhp"],
 		"claimRefs": {
 			"location": ["loc-panorama"],
@@ -36,7 +36,7 @@
 		"city": "Buffalo",
 		"state": "New York",
 		"stateCode": "NY",
-		"coordinates": { "lat": 42.9336, "lng": -78.8775, "precision": "campus" },
+		"coordinates": { "lat": 42.929527895807034, "lng": -78.88228002600871, "precision": "exact" },
 		"dates": { "opened": null, "completed": "1895", "closed": null },
 		"architects": ["Henry Hobson Richardson"],
 		"originalInstitution": "Buffalo State Hospital",
@@ -44,7 +44,10 @@
 		"status": "preserved-reuse",
 		"presentUse": "Richardson Olmsted Campus; adaptive reuse and cultural uses",
 		"note": "The surviving hospital complex is associated with Henry Hobson Richardson and is being used through an adaptive-reuse campus model.",
-		"images": [],
+		"images": [
+			"/images/buffalo-state-hospital-hh-richardson.jpg",
+			"/images/buffalo-state-hospital-highsmith.jpg"
+		],
 		"sourceRefs": ["kb-buffalo", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-buffalo", "kirkbride-buildings-index"],
@@ -69,7 +72,7 @@
 		"status": "operating-healthcare",
 		"presentUse": "Cherokee Mental Health Institute and related institutional uses",
 		"note": "The former state hospital remains in institutional use, with much of the historic Kirkbride building surviving.",
-		"images": [],
+		"images": ["/images/cherokee-state-hospital-1915.jpg"],
 		"sourceRefs": ["kb-cherokee", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-cherokee", "kirkbride-buildings-index"],
@@ -98,7 +101,7 @@
 		"status": "operating-healthcare",
 		"presentUse": "Treatment and human-services campus; current access is managed by the institution",
 		"note": "The large Iowa Kirkbride campus retains its principal building and has continued through changing treatment and institutional uses.",
-		"images": [],
+		"images": ["/images/clarinda-state-hospital-habs.jpg"],
 		"sourceRefs": ["kb-clarinda", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-clarinda", "kirkbride-buildings-index"],
@@ -115,7 +118,7 @@
 		"city": "Danvers",
 		"state": "Massachusetts",
 		"stateCode": "MA",
-		"coordinates": { "lat": 42.5751, "lng": -70.9565, "precision": "campus" },
+		"coordinates": { "lat": 42.58117761925458, "lng": -70.97453041369808, "precision": "exact" },
 		"dates": { "opened": "1878", "completed": "1880", "closed": "1992" },
 		"architects": ["Nathaniel J. Bradlee"],
 		"originalInstitution": "Danvers State Hospital",
@@ -123,7 +126,7 @@
 		"status": "partial-remains",
 		"presentUse": "Adaptive reuse development; the surviving central façade and related structures remain",
 		"note": "Much of the historic complex was demolished, while the central Kirkbride building was incorporated into later development.",
-		"images": [],
+		"images": ["/images/danvers-state-hospital-1893.jpg"],
 		"sourceRefs": ["mass-dcr-danvers", "kirkbride-buildings", "nps-nrhp"],
 		"claimRefs": {
 			"location": ["mass-dcr-danvers"],
@@ -148,7 +151,7 @@
 		"status": "demolished",
 		"presentUse": "Historic location; the principal building was demolished",
 		"note": "The former Western Pennsylvania asylum was a Kirkbride site near the Ohio River; its main building no longer survives.",
-		"images": [],
+		"images": ["/images/dixmont-state-hospital.jpg"],
 		"sourceRefs": ["kb-dixmont", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-dixmont", "kirkbride-buildings-index"],
@@ -176,7 +179,7 @@
 		"status": "partial-remains",
 		"presentUse": "Former treatment-center campus with surviving historic buildings and redevelopment activity",
 		"note": "The central building and parts of the former treatment-center campus survive after the hospital’s institutional role was reduced.",
-		"images": [],
+		"images": ["/images/fergus-falls-state-hospital-central.jpg"],
 		"sourceRefs": ["kb-fergus-falls", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-fergus-falls", "kirkbride-buildings-index"],
@@ -205,7 +208,7 @@
 		"status": "demolished",
 		"presentUse": "Historic location; the Kirkbride building was demolished in 2015",
 		"note": "The former New Jersey State Hospital Kirkbride was demolished after preservation and reuse proposals did not proceed.",
-		"images": [],
+		"images": ["/images/greystone-park-state-hospital.jpg"],
 		"sourceRefs": ["kb-greystone", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-greystone", "kirkbride-buildings-index"],
@@ -230,7 +233,7 @@
 		"status": "operating-healthcare",
 		"presentUse": "Mental Health Institute and psychiatric healthcare uses",
 		"note": "The historic Iowa Kirkbride remains part of the state’s mental-healthcare system and retains much of its original exterior form.",
-		"images": [],
+		"images": ["/images/independence-state-hospital.jpg"],
 		"sourceRefs": ["kb-independence", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-independence", "kirkbride-buildings-index"],
@@ -255,7 +258,7 @@
 		"status": "demolished",
 		"presentUse": "Historic location; the principal Kirkbride building was demolished",
 		"note": "The former Northampton Kirkbride, known as Old Main, was demolished after the hospital closed.",
-		"images": [],
+		"images": ["/images/northampton-state-hospital.jpg"],
 		"sourceRefs": ["kb-northampton", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-northampton", "kirkbride-buildings-index"],
@@ -272,7 +275,7 @@
 		"city": "Salem",
 		"state": "Oregon",
 		"stateCode": "OR",
-		"coordinates": { "lat": 44.9342, "lng": -123.0294, "precision": "campus" },
+		"coordinates": { "lat": 44.93906363049539, "lng": -123.00489757055989, "precision": "exact" },
 		"dates": { "opened": "1883", "completed": "1883", "closed": null },
 		"architects": ["William H. Willson"],
 		"originalInstitution": "Oregon State Insane Asylum",
@@ -305,7 +308,7 @@
 		"status": "preserved-reuse",
 		"presentUse": "Historic West Campus structure within a controlled federal redevelopment area",
 		"note": "The historic Kirkbride is part of the Saint Elizabeths campus, a National Historic Landmark site with restricted access.",
-		"images": [],
+		"images": ["/images/saint-elizabeths-hospital-nara.jpg"],
 		"sourceRefs": ["kb-saint-elizabeths", "kirkbride-buildings-index", "nps-nrhp"],
 		"claimRefs": {
 			"location": ["kb-saint-elizabeths", "kirkbride-buildings-index"],
@@ -330,38 +333,13 @@
 		"status": "demolished",
 		"presentUse": "Historic location; the Kirkbride building was demolished in stages",
 		"note": "The Taunton Kirkbride was abandoned and later demolished after fires and structural deterioration.",
-		"images": [],
+		"images": ["/images/taunton-state-hospital-dome.jpg"],
 		"sourceRefs": ["kb-taunton", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-taunton", "kirkbride-buildings-index"],
 			"dates": ["kb-taunton", "kirkbride-buildings-index"],
 			"architects": ["kb-taunton", "kirkbride-buildings-index"],
 			"status": ["kb-taunton"]
-		}
-	},
-	{
-		"id": "utica-state-hospital",
-		"slug": "utica-state-hospital",
-		"name": "Utica State Hospital",
-		"aliases": ["Utica Psychiatric Center", "New York State Lunatic Asylum at Utica"],
-		"city": "Utica",
-		"state": "New York",
-		"stateCode": "NY",
-		"coordinates": { "lat": 43.1009, "lng": -75.2327, "precision": "campus" },
-		"dates": { "opened": "1843", "completed": "1843", "closed": "1978" },
-		"architects": ["William Clarke"],
-		"originalInstitution": "New York State Lunatic Asylum at Utica",
-		"configuration": "Early Kirkbride plan with a central block and symmetrical wings",
-		"status": "demolished",
-		"presentUse": "Historic location; the principal asylum building was demolished",
-		"note": "Utica was an early model for the plan, and its former grounds are represented here as a historic location rather than a surviving building.",
-		"images": [],
-		"sourceRefs": ["ny-omh-utica", "kirkbride-buildings", "nps-nrhp"],
-		"claimRefs": {
-			"location": ["ny-omh-utica"],
-			"dates": ["ny-omh-utica"],
-			"architects": ["ny-omh-utica"],
-			"status": ["ny-omh-utica"]
 		}
 	},
 	{
@@ -380,7 +358,7 @@
 		"status": "preserved-reuse",
 		"presentUse": "Privately operated historic site and museum; access is managed by the site operator",
 		"note": "Its main building is one of the largest surviving Kirkbride-plan structures in the United States.",
-		"images": [],
+		"images": ["/images/weston-state-hospital.jpg"],
 		"sourceRefs": ["wv-history-weston", "kirkbride-buildings", "nps-nrhp"],
 		"claimRefs": {
 			"location": ["wv-history-weston"],
@@ -409,7 +387,7 @@
 		"status": "partial-remains",
 		"presentUse": "Historic former hospital campus with surviving structures; access is controlled",
 		"note": "The surviving Kirkbride building occupies a hilltop campus in Poughkeepsie and has undergone substantial alteration and damage.",
-		"images": [],
+		"images": ["/images/hudson-river-state-hospital.jpg"],
 		"sourceRefs": ["kb-hudson-river", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-hudson-river", "kirkbride-buildings-index"],
@@ -438,7 +416,7 @@
 		"status": "partial-remains",
 		"presentUse": "Historic location with limited surviving fabric, including the Hooper Hall rotunda",
 		"note": "Fire and later demolition removed most of the former Kirkbride; fragments of the complex remain near the modern hospital campus.",
-		"images": [],
+		"images": ["/images/worcester-state-hospital.jpg"],
 		"sourceRefs": ["kb-worcester", "kirkbride-buildings-index"],
 		"claimRefs": {
 			"location": ["kb-worcester", "kirkbride-buildings-index"],
@@ -463,7 +441,7 @@
 		"status": "preserved-reuse",
 		"presentUse": "Mixed-use village, offices, residences, and public spaces",
 		"note": "The former asylum campus is a major surviving example of the Kirkbride approach and has been adapted for new uses.",
-		"images": [],
+		"images": ["/images/traverse-city-state-hospital.jpg"],
 		"sourceRefs": ["michigan-shpo-traverse", "kirkbride-buildings", "nps-nrhp"],
 		"claimRefs": {
 			"location": ["michigan-shpo-traverse"],
@@ -488,7 +466,10 @@
 		"status": "demolished",
 		"presentUse": "Historic location; most hospital buildings, including the center building, were demolished",
 		"note": "The Topeka hospital was built under the Kirkbride Plan and operated until 1997; its historic center building was demolished in 2010.",
-		"images": [],
+		"images": [
+			"/images/topeka-state-mental-hospital.jpg",
+			"/images/topeka-state-hospital-postcard.jpg"
+		],
 		"sourceRefs": ["wikipedia-topeka-state-hospital"],
 		"claimRefs": {
 			"location": ["wikipedia-topeka-state-hospital"],
@@ -517,7 +498,10 @@
 		"status": "partial-remains",
 		"presentUse": "Kalamazoo Psychiatric Hospital and an evolving institutional campus; historic gatehouse and water tower remain",
 		"note": "The hospital opened in 1859 under the Kirkbride Plan. Most original buildings, including the main building, were later demolished, while selected historic structures survive.",
-		"images": [],
+		"images": [
+			"/images/kalamazoo-state-hospital-habs-089141.jpg",
+			"/images/kalamazoo-state-hospital-habs-089142.jpg"
+		],
 		"sourceRefs": ["wikipedia-kalamazoo-regional", "wikidata-kalamazoo-regional"],
 		"claimRefs": {
 			"location": ["wikidata-kalamazoo-regional"],
@@ -546,7 +530,7 @@
 		"status": "demolished",
 		"presentUse": "Historic location; the main Kirkbride building was demolished in 1999",
 		"note": "The Nevada, Missouri hospital was established in 1885, constructed in 1887, and later closed before its principal Kirkbride building was demolished.",
-		"images": [],
+		"images": ["/images/nevada-state-hospital-1890.jpg"],
 		"sourceRefs": [
 			"wikipedia-nevada-state-hospital",
 			"asylumprojects-nevada-state-hospital",
@@ -584,7 +568,7 @@
 		"status": "preserved-reuse",
 		"presentUse": "Castle Park Apartments",
 		"note": "The former private hospital was converted into housing after it closed in 1978.",
-		"images": [],
+		"images": ["/images/st-vincent-state-hospital.jpg"],
 		"sourceRefs": ["asylumprojects-st-vincent-state-hospital"],
 		"claimRefs": {
 			"location": ["asylumprojects-st-vincent-state-hospital"],
@@ -614,7 +598,7 @@
 		"status": "preserved-reuse",
 		"presentUse": "Eastern Oregon Correctional Institution and related state services",
 		"note": "The former hospital campus remains in use, including the Kirkbride building as part of a state correctional facility.",
-		"images": [],
+		"images": ["/images/eastern-oregon-state-hospital.jpg"],
 		"sourceRefs": ["asylumprojects-eastern-oregon-state-hospital"],
 		"claimRefs": {
 			"location": ["asylumprojects-eastern-oregon-state-hospital"],
@@ -644,7 +628,7 @@
 		"status": "partial-remains",
 		"presentUse": "Western Reception, Diagnostic & Correctional Center; the Glore Psychiatric Museum is nearby",
 		"note": "The original hospital campus was converted into a correctional facility, while a new psychiatric rehabilitation center opened across the street.",
-		"images": [],
+		"images": ["/images/st-joseph-state-hospital-postcard.jpg"],
 		"sourceRefs": ["asylumprojects-st-joseph-state-hospital"],
 		"claimRefs": {
 			"location": ["asylumprojects-st-joseph-state-hospital"],
@@ -673,7 +657,7 @@
 		"status": "operating-healthcare",
 		"presentUse": "Fulton State Hospital and psychiatric healthcare services",
 		"note": "Fulton State Hospital continues to provide care, while the original Kirkbride building was substantially altered after a 1956 fire.",
-		"images": [],
+		"images": ["/images/fulton-state-hospital-1884.jpg"],
 		"sourceRefs": ["kirkbride-fulton"],
 		"claimRefs": {
 			"location": ["kirkbride-fulton"],
