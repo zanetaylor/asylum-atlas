@@ -284,8 +284,9 @@
 	<aside class="controls" aria-label="Explorer filters and site list">
 		<div class="explorer-heading">
 			<p class="eyebrow">{sites.length} sites</p>
-			<h1>Explore</h1>
-			<p>Explore verified former and surviving U.S. sites associated with the Kirkbride Plan.</p>
+			<!-- <h1>Explore</h1> -->
+			<h3>Have you ever wanted to see a map of all the former and existing sites of asylums built on the Kirkbride Plan?</h3>
+			<p>Not really? Well here you go anyway! A work in progress.</p>
 		</div>
 		<label for="site-search">Search sites</label>
 		<div class="search-wrap">
@@ -477,7 +478,7 @@
 		margin-bottom: 2rem;
 	}
 	.explorer-heading h1 {
-		font-size: 3.4rem;
+		font-size: 3rem;
 		margin: 0.45rem 0 0.8rem;
 	}
 	.explorer-heading p:last-child {

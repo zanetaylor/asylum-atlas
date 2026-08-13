@@ -20,9 +20,7 @@ const {
 	</head>
 	<body>
 		<header class="site-header">
-			<a class="wordmark" href="/" aria-label="Asylum Atlas home"
-				><span class="wordmark-mark">A</span><span>Asylum<br /><em>Atlas</em></span></a
-			>
+			<a class="wordmark" href="/" aria-label="Asylum Atlas home">Asylum Atlas</a>
 			<nav aria-label="Main navigation">
 				<a href="/">Explore</a>
 				<a href="/about/">About</a>
@@ -122,32 +120,12 @@ const {
 		border-bottom: 1px solid var(--line);
 	}
 	.wordmark {
-		display: flex;
-		align-items: center;
-		gap: 0.7rem;
-		font-family: "DM Mono", monospace;
-		font-size: 0.9rem;
-		line-height: 0.9;
+		font-family: "Playfair Display", Georgia, serif;
+		font-size: 1.55rem;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: -0.03em;
 		text-decoration: none;
-		text-transform: uppercase;
-		letter-spacing: 0.07em;
-	}
-	.wordmark em {
-		font-family: "Playfair Display", serif;
-		text-transform: none;
-		letter-spacing: 0;
-		font-size: 1.5rem;
-	}
-	.wordmark-mark {
-		display: grid;
-		place-items: center;
-		width: 40px;
-		height: 40px;
-		background: var(--ink);
-		color: var(--paper);
-		border-radius: 50%;
-		font-family: "Playfair Display", serif;
-		font-size: 1.5rem;
 	}
 	nav {
 		display: flex;
