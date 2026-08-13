@@ -9,7 +9,7 @@ const items = sources as Source[];
 		items.map((source) => (
 			<li id={source.id}>
 				<>
-					<span class="source-type">{source.type}</span>
+					<span class="source-type">{source.type.replaceAll("-", " ")}</span>
 					<div>
 						<>
 							<a href={source.url} target="_blank" rel="noreferrer">
@@ -47,7 +47,9 @@ const items = sources as Source[];
 		font-size: 0.85rem;
 	}
 	.source-type {
-		min-width: 120px;
+		flex: 0 0 120px;
+		width: 120px;
+		min-width: 0;
 		color: var(--rust);
 		font:
 			500 0.63rem "DM Mono",

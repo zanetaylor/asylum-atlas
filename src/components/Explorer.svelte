@@ -285,7 +285,10 @@
 		<div class="explorer-heading">
 			<p class="eyebrow">{sites.length} sites</p>
 			<!-- <h1>Explore</h1> -->
-			<h3>Have you ever wanted to see a map of all the former and existing sites of asylums built on the Kirkbride Plan?</h3>
+			<h3>
+				Have you ever wanted to see a map of all the former and existing sites of asylums built on
+				the Kirkbride Plan?
+			</h3>
 			<p>Not really? Well here you go anyway! A work in progress.</p>
 		</div>
 		<label for="site-search">Search sites</label>
