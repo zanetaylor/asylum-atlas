@@ -8,3 +8,4 @@ dist/
 .wrangler
 
 AGENTS-*.md
+.pi/
