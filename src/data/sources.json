@@ -334,5 +334,341 @@
 		"url": "https://www.hhs.texas.gov/services/mental-health-substance-use/state-hospitals/terrell-state-hospital",
 		"accessed": "2025-02-14",
 		"type": "government"
+	},
+	{
+		"id": "ap-anna-state-hospital",
+		"title": "Anna State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Anna_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-austin-state-hospital",
+		"title": "Austin State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Austin_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-bolivar-state-hospital",
+		"title": "Bolivar State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Bolivar_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-broughton-hospital",
+		"title": "Broughton Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Broughton_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-bryce-hospital",
+		"title": "Bryce Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Bryce_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-central-indiana-state-hospital",
+		"title": "Central Indiana State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Central_Indiana_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-central-lunatic-asylum",
+		"title": "Central Lunatic Asylum",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Central_Lunatic_Asylum",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-central-state-hospital-louisville",
+		"title": "Central State Hospital Louisville",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Central_State_Hospital_Louisville",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-cleveland-state-hospital",
+		"title": "Cleveland State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Cleveland_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-columbus-state-hospital",
+		"title": "Columbus State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Columbus_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-connecticut-state-hospital",
+		"title": "Connecticut State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Connecticut_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-danville-state-hospital",
+		"title": "Danville State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Danville_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-dayton-state-hospital",
+		"title": "Dayton State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Dayton_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-east-tennessee-hospital-for-the-insane",
+		"title": "East Tennessee Hospital for the Insane",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=East_Tennessee_Hospital_for_the_Insane",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-eastern-washington-state-hospital",
+		"title": "Eastern Washington State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Eastern_Washington_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-elgin-state-hospital",
+		"title": "Elgin State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Elgin_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-harrisburg-state-hospital",
+		"title": "Harrisburg State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Harrisburg_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-institute-of-the-pennsylvania-hospital",
+		"title": "Institute of the Pennsylvania Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Institute_of_the_Pennsylvania_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-jacksonville-state-hospital",
+		"title": "Jacksonville State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Jacksonville_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-kankakee-state-hospital",
+		"title": "Kankakee State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Kankakee_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-longview-state-hospital",
+		"title": "Longview State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Longview_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-manhattan-psychiatric-center",
+		"title": "Manhattan Psychiatric Center",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Manhattan_Psychiatric_Center",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-mendota-mental-health-institute",
+		"title": "Mendota Mental Health Institute",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Mendota_Mental_Health_Institute",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-mississippi-state-hospital",
+		"title": "Mississippi State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Mississippi_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-mount-hope-retreat",
+		"title": "Mount Hope Retreat",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Mount_Hope_Retreat",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-mt-pleasant-state-hospital",
+		"title": "Mt Pleasant State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Mt_Pleasant_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-osawatomie-state-hospital",
+		"title": "Osawatomie State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Osawatomie_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-patton-state-hospital",
+		"title": "Patton State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Patton_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-pontiac-state-hospital",
+		"title": "Pontiac State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Pontiac_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-providence-retreat",
+		"title": "Providence Retreat",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Providence_Retreat",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-rochester-state-hospital",
+		"title": "Rochester State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Rochester_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-south-carolina-state-hospital",
+		"title": "South Carolina State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=South_Carolina_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-spencer-state-hospital",
+		"title": "Spencer State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Spencer_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-spring-grove-state-hospital",
+		"title": "Spring Grove State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Spring_Grove_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-st-josephs-retreat",
+		"title": "St. Joseph's Retreat",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=St_Josephs_Retreat",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-st-peter-state-hospital",
+		"title": "St. Peter State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=St._Peter_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-trenton-state-hospital",
+		"title": "Trenton State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Trenton_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-warren-state-hospital",
+		"title": "Warren State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Warren_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-western-state-hospital-hopkinsville",
+		"title": "Western State Hospital Hopkinsville",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Western_State_Hospital_Hopkinsville",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-willard-state-hospital",
+		"title": "Willard State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Willard_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-winnebago-state-hospital",
+		"title": "Winnebago State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Winnebago_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "ap-yankton-state-hospital",
+		"title": "Yankton State Hospital",
+		"publisher": "Asylum Projects",
+		"url": "https://asylumprojects.org/index.php?title=Yankton_State_Hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
 	}
 ]
