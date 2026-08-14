@@ -1110,7 +1110,7 @@
 		"city": "Knoxville",
 		"state": "Tennessee",
 		"stateCode": "TN",
-		"coordinates": { "lat": 35.9603948, "lng": -83.9210261, "precision": "approximate" },
+		"coordinates": { "lat": 35.922396876189474, "lng": -83.99296332701199, "precision": "exact" },
 		"dates": { "opened": "1886", "completed": null, "closed": "2012" },
 		"architects": [],
 		"originalInstitution": "East Tennessee Hospital for the Insane",
