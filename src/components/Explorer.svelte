@@ -47,6 +47,13 @@
 	let attributionControl: any;
 	let hoverPopup: any;
 	let basemap: Basemap = "street";
+	type MapCamera = {
+		center: [number, number];
+		zoom: number;
+		bearing: number;
+		pitch: number;
+	};
+	let pendingCamera: MapCamera | null = null;
 	let mapError = "";
 	let filteredSites: AsylumSite[] = sites;
 	let sortedSites: AsylumSite[] = sites;
@@ -264,6 +271,13 @@
 
 	function setBasemap(nextBasemap: Basemap) {
 		if (!map || basemap === nextBasemap) return;
+		const center = map.getCenter();
+		pendingCamera = {
+			center: [center.lng, center.lat],
+			zoom: map.getZoom(),
+			bearing: map.getBearing(),
+			pitch: map.getPitch(),
+		};
 		basemap = nextBasemap;
 		updateAttributionControl();
 		hideSiteLabel();
@@ -285,8 +299,12 @@
 			updateAttributionControl();
 			map.on("style.load", () => {
 				addSiteLayers();
-				if (selected)
+				if (pendingCamera) {
+					map.jumpTo(pendingCamera);
+					pendingCamera = null;
+				} else if (selected) {
 					map.flyTo({ center: [selected.coordinates.lng, selected.coordinates.lat], zoom: 9 });
+				}
 			});
 			map.on("moveend", () => updateUrl(selected));
 			map.on("error", (event: any) => {
@@ -318,7 +336,10 @@
 				Have you ever wanted a map of all the sites of former and existing asylum buildings based on
 				the Kirkbride Plan?
 			</h4>
-			<p>Not really? Well here you go anyway! A work in progress. Some info may be incomplete or inaccurate.</p>
+			<p>
+				Not really? Well here you go anyway! A work in progress. Some info may be incomplete or
+				inaccurate.
+			</p>
 		</div>
 		<label for="site-search">Search sites</label>
 		<div class="search-wrap">
