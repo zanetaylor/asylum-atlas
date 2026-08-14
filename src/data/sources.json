@@ -262,5 +262,77 @@
 		"url": "https://www.kirkbridebuildings.com/buildings/fulton/",
 		"accessed": "2025-02-14",
 		"type": "discovery"
+	},
+	{
+		"id": "kb-little-rock",
+		"title": "Arkansas State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "https://www.kirkbridebuildings.com/buildings/little-rock/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "encyclopedia-arkansas-state-hospital",
+		"title": "Arkansas State Hospital",
+		"publisher": "Encyclopedia of Arkansas",
+		"url": "https://encyclopediaofarkansas.net/entries/arkansas-state-hospital-2238/",
+		"accessed": "2025-02-14",
+		"type": "encyclopedia"
+	},
+	{
+		"id": "arkansas-dhs-state-hospital",
+		"title": "Pulaski – Arkansas State Hospital",
+		"publisher": "Arkansas Department of Human Services",
+		"url": "https://humanservices.arkansas.gov/offices/pulaski-arkansas-state-hospital/",
+		"accessed": "2025-02-14",
+		"type": "government"
+	},
+	{
+		"id": "kb-napa",
+		"title": "Napa State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "https://www.kirkbridebuildings.com/buildings/napa/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "california-dsh-napa",
+		"title": "DSH-Napa",
+		"publisher": "California Department of State Hospitals",
+		"url": "https://www.dsh.ca.gov/NAPA/",
+		"accessed": "2025-02-14",
+		"type": "government"
+	},
+	{
+		"id": "california-dsh-napa-contact",
+		"title": "DSH-Napa Contact Information",
+		"publisher": "California Department of State Hospitals",
+		"url": "https://www.dsh.ca.gov/Napa/Contact_Info.html",
+		"accessed": "2025-02-14",
+		"type": "government"
+	},
+	{
+		"id": "kb-terrell",
+		"title": "Terrell State Hospital",
+		"publisher": "Kirkbride Buildings",
+		"url": "https://www.kirkbridebuildings.com/buildings/terrell/",
+		"accessed": "2025-02-14",
+		"type": "discovery"
+	},
+	{
+		"id": "tsha-terrell-state-hospital",
+		"title": "Terrell State Hospital",
+		"publisher": "Texas State Historical Association",
+		"url": "https://www.tshaonline.org/handbook/entries/terrell-state-hospital",
+		"accessed": "2025-02-14",
+		"type": "historical-society"
+	},
+	{
+		"id": "texas-hhs-terrell-state-hospital",
+		"title": "Terrell State Hospital",
+		"publisher": "Texas Health and Human Services",
+		"url": "https://www.hhs.texas.gov/services/mental-health-substance-use/state-hospitals/terrell-state-hospital",
+		"accessed": "2025-02-14",
+		"type": "government"
 	}
 ]

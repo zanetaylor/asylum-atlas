@@ -284,12 +284,12 @@
 	<aside class="controls" aria-label="Explorer filters and site list">
 		<div class="explorer-heading">
 			<p class="eyebrow">{sites.length} sites</p>
-			<!-- <h1>Explore</h1> -->
-			<h3>
-				Have you ever wanted to see a map of all the former and existing sites of asylums built on
+			<h1>Explore</h1>
+			<h4>
+				Have you ever wanted a map of all the sites of former and existing asylum buildings based on
 				the Kirkbride Plan?
-			</h3>
-			<p>Not really? Well here you go anyway! A work in progress.</p>
+			</h4>
+			<p>Not really? Well here you go anyway! A work in progress. Some info may be inaccurate.</p>
 		</div>
 		<label for="site-search">Search sites</label>
 		<div class="search-wrap">

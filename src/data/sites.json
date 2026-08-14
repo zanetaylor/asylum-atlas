@@ -171,7 +171,7 @@
 		"city": "Fergus Falls",
 		"state": "Minnesota",
 		"stateCode": "MN",
-		"coordinates": { "lat": 46.2834, "lng": -96.0777, "precision": "campus" },
+		"coordinates": { "lat": 46.29929867243246, "lng": -96.08124203180388, "precision": "exact" },
 		"dates": { "opened": "1888", "completed": "1906", "closed": null },
 		"architects": ["Warren Dunnell"],
 		"originalInstitution": "Fergus Falls State Hospital",
@@ -664,6 +664,85 @@
 			"dates": ["kirkbride-fulton"],
 			"architects": ["kirkbride-fulton"],
 			"status": ["kirkbride-fulton"]
+		}
+	},
+	{
+		"id": "arkansas-state-hospital",
+		"slug": "arkansas-state-hospital",
+		"name": "Arkansas State Hospital",
+		"aliases": ["Arkansas Lunatic Asylum", "Arkansas State Hospital for Nervous Diseases"],
+		"city": "Little Rock",
+		"state": "Arkansas",
+		"stateCode": "AR",
+		"coordinates": { "lat": 34.7502038, "lng": -92.3246556, "precision": "campus" },
+		"dates": { "opened": "1883", "completed": null, "closed": null },
+		"architects": [],
+		"originalInstitution": "Arkansas Lunatic Asylum",
+		"configuration": "Kirkbride plan; the original building was demolished in the 1960s",
+		"status": "operating-healthcare",
+		"presentUse": "Arkansas State Hospital and state psychiatric healthcare services",
+		"note": "The state hospital remains active, but the original Kirkbride building was demolished during campus renewal in the 1960s.",
+		"images": [],
+		"sourceRefs": [
+			"kb-little-rock",
+			"encyclopedia-arkansas-state-hospital",
+			"arkansas-dhs-state-hospital"
+		],
+		"claimRefs": {
+			"location": ["encyclopedia-arkansas-state-hospital", "arkansas-dhs-state-hospital"],
+			"dates": ["kb-little-rock", "encyclopedia-arkansas-state-hospital"],
+			"architects": ["kb-little-rock"],
+			"status": ["kb-little-rock", "arkansas-dhs-state-hospital"]
+		}
+	},
+	{
+		"id": "napa-state-hospital",
+		"slug": "napa-state-hospital",
+		"name": "Napa State Hospital",
+		"aliases": ["Napa State Asylum for the Insane", "Imola State Hospital"],
+		"city": "Napa",
+		"state": "California",
+		"stateCode": "CA",
+		"coordinates": { "lat": 38.269988, "lng": -122.271634, "precision": "campus" },
+		"dates": { "opened": "1875", "completed": "1876", "closed": null },
+		"architects": ["Wright & Saunders"],
+		"originalInstitution": "Napa State Asylum for the Insane",
+		"configuration": "Kirkbride plan; the original building was demolished in 1949",
+		"status": "operating-healthcare",
+		"presentUse": "Napa State Hospital and state psychiatric healthcare services",
+		"note": "Napa State Hospital remains active, while its original Kirkbride building was demolished to make room for newer facilities.",
+		"images": [],
+		"sourceRefs": ["kb-napa", "california-dsh-napa", "california-dsh-napa-contact"],
+		"claimRefs": {
+			"location": ["california-dsh-napa-contact", "kb-napa"],
+			"dates": ["kb-napa", "california-dsh-napa"],
+			"architects": ["kb-napa"],
+			"status": ["kb-napa", "california-dsh-napa"]
+		}
+	},
+	{
+		"id": "terrell-state-hospital",
+		"slug": "terrell-state-hospital",
+		"name": "Terrell State Hospital",
+		"aliases": ["North Texas Lunatic Asylum", "North Texas Hospital for the Insane"],
+		"city": "Terrell",
+		"state": "Texas",
+		"stateCode": "TX",
+		"coordinates": { "lat": 32.7405411, "lng": -96.2640121, "precision": "campus" },
+		"dates": { "opened": "1885", "completed": null, "closed": null },
+		"architects": ["J. N. Preston & Sons"],
+		"originalInstitution": "North Texas Lunatic Asylum",
+		"configuration": "Kirkbride plan; the original building no longer survives",
+		"status": "operating-healthcare",
+		"presentUse": "Terrell State Hospital and state psychiatric healthcare services",
+		"note": "The hospital continues to operate as a psychiatric facility; a fountain is the remaining feature associated with the original construction.",
+		"images": [],
+		"sourceRefs": ["kb-terrell", "tsha-terrell-state-hospital", "texas-hhs-terrell-state-hospital"],
+		"claimRefs": {
+			"location": ["tsha-terrell-state-hospital", "texas-hhs-terrell-state-hospital"],
+			"dates": ["kb-terrell", "tsha-terrell-state-hospital"],
+			"architects": ["kb-terrell"],
+			"status": ["kb-terrell", "texas-hhs-terrell-state-hospital"]
 		}
 	}
 ]
