@@ -45,6 +45,7 @@
 	let map: any;
 	let mapLibrary: any;
 	let attributionControl: any;
+	let hoverPopup: any;
 	let basemap: Basemap = "street";
 	let mapError = "";
 	let filteredSites: AsylumSite[] = sites;
@@ -151,19 +152,43 @@
 		map.getCanvas().style.cursor = "";
 	}
 
+	function showSiteLabel(event: any) {
+		const feature = event.features?.[0];
+		const coordinates = feature?.geometry?.coordinates?.slice();
+		const name = feature?.properties?.name;
+		if (!coordinates || !name || !mapLibrary) return;
+		setPointerCursor();
+		hoverPopup?.remove();
+		hoverPopup = new mapLibrary.Popup({
+			closeButton: false,
+			closeOnClick: false,
+			offset: 18,
+			className: "site-hover-label",
+		})
+			.setLngLat(coordinates)
+			.setText(name)
+			.addTo(map);
+	}
+
+	function hideSiteLabel() {
+		clearPointerCursor();
+		hoverPopup?.remove();
+		hoverPopup = null;
+	}
+
 	function bindMapInteractions() {
 		map.off("click", "clusters", handleClusterClick);
 		map.off("click", "site-points", handleSiteClick);
 		map.off("mouseenter", "clusters", setPointerCursor);
-		map.off("mouseenter", "site-points", setPointerCursor);
+		map.off("mouseenter", "site-points", showSiteLabel);
 		map.off("mouseleave", "clusters", clearPointerCursor);
-		map.off("mouseleave", "site-points", clearPointerCursor);
+		map.off("mouseleave", "site-points", hideSiteLabel);
 		map.on("click", "clusters", handleClusterClick);
 		map.on("click", "site-points", handleSiteClick);
 		map.on("mouseenter", "clusters", setPointerCursor);
-		map.on("mouseenter", "site-points", setPointerCursor);
+		map.on("mouseenter", "site-points", showSiteLabel);
 		map.on("mouseleave", "clusters", clearPointerCursor);
-		map.on("mouseleave", "site-points", clearPointerCursor);
+		map.on("mouseleave", "site-points", hideSiteLabel);
 	}
 
 	function addSiteLayers() {
@@ -241,6 +266,7 @@
 		if (!map || basemap === nextBasemap) return;
 		basemap = nextBasemap;
 		updateAttributionControl();
+		hideSiteLabel();
 		map.setStyle(basemap === "street" ? STREET_STYLE : SATELLITE_STYLE);
 		updateUrl(selected);
 	}
@@ -276,7 +302,10 @@
 	onMount(() => {
 		readUrl();
 		setupMap();
-		return () => map?.remove();
+		return () => {
+			hoverPopup?.remove();
+			map?.remove();
+		};
 	});
 </script>
 
@@ -289,7 +318,7 @@
 				Have you ever wanted a map of all the sites of former and existing asylum buildings based on
 				the Kirkbride Plan?
 			</h4>
-			<p>Not really? Well here you go anyway! A work in progress. Some info may be inaccurate.</p>
+			<p>Not really? Well here you go anyway! A work in progress. Some info may be incomplete or inaccurate.</p>
 		</div>
 		<label for="site-search">Search sites</label>
 		<div class="search-wrap">
@@ -559,7 +588,7 @@
 		text-decoration: underline;
 	}
 	.reset:disabled {
-		color: #a9ada5;
+		color: var(--disabled);
 		cursor: default;
 		text-decoration: none;
 	}
@@ -574,7 +603,7 @@
 		gap: 0.65rem;
 		max-width: calc(100% - 2rem);
 		padding: 0.75rem;
-		background: rgba(251, 250, 246, 0.94);
+		background: var(--overlay);
 		border: 1px solid var(--line);
 		box-shadow: var(--shadow);
 		backdrop-filter: blur(8px);
@@ -708,7 +737,7 @@
 	.map-column {
 		min-width: 0;
 		min-height: calc(100vh - 84px);
-		background: #e1e4da;
+		background: var(--map-surface);
 	}
 	.map-status {
 		min-height: 40px;
@@ -721,7 +750,15 @@
 		position: relative;
 		height: calc(100vh - 124px);
 		min-height: 520px;
-		background: linear-gradient(135deg, #dfe4d9, #c9d2c6);
+		background: linear-gradient(135deg, var(--map-gradient-start), var(--map-gradient-end));
+	}
+	:global(.maplibregl-ctrl-group) {
+		background: var(--card);
+		border-color: var(--line);
+	}
+	:global(.maplibregl-ctrl-group button) {
+		border-color: var(--line);
+		filter: var(--control-icon-filter);
 	}
 	:global(.maplibregl-ctrl-bottom-right) {
 		display: flex;
@@ -740,7 +777,7 @@
 	:global(.maplibregl-ctrl-attrib) {
 		padding: 2px 5px;
 		border-radius: 2px 0 0;
-		background: rgba(251, 250, 246, 0.92);
+		background: var(--overlay);
 		color: var(--ink-soft);
 		font:
 			500 10px/1.4 "DM Mono",
@@ -755,6 +792,20 @@
 	:global(.maplibregl-ctrl-attrib-button) {
 		width: 24px;
 		height: 24px;
+	}
+	:global(.site-hover-label .maplibregl-popup-content) {
+		padding: 0.45rem 0.65rem;
+		border: 1px solid var(--line);
+		border-radius: 0;
+		background: var(--overlay);
+		color: var(--ink);
+		box-shadow: none;
+		font:
+			500 0.72rem "DM Mono",
+			monospace;
+	}
+	:global(.site-hover-label .maplibregl-popup-tip) {
+		display: none;
 	}
 	.detail-panel {
 		position: absolute;

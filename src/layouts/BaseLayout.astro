@@ -2,10 +2,12 @@
 interface Props {
 	title: string;
 	description?: string;
+	flushHeader?: boolean;
 }
 const {
 	title,
 	description = "A sourced map of former and surviving U.S. Kirkbride Plan asylum sites.",
+	flushHeader = false,
 } = Astro.props;
 ---
 
@@ -15,16 +17,39 @@ const {
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={description} />
-		<meta name="theme-color" content="#19332f" />
+		<meta name="theme-color" content="#f4f1e9" data-theme-color />
 		<title>{title} · Asylum Atlas</title>
+		<script is:inline>
+			try {
+				const savedTheme = localStorage.getItem("asylum-atlas-theme");
+				const theme =
+					savedTheme === "dark" ||
+					(!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+						? "dark"
+						: "light";
+				document.documentElement.dataset.theme = theme;
+			} catch {
+				// Keep the default light theme when storage is unavailable.
+			}
+		</script>
 	</head>
 	<body>
-		<header class="site-header">
+		<header class:list={["site-header", { "site-header--flush": flushHeader }]}>
 			<a class="wordmark" href="/" aria-label="Asylum Atlas home">Asylum Atlas</a>
 			<nav aria-label="Main navigation">
 				<a href="/">Map</a>
 				<a href="/about/">About</a>
 				<a href="/sources/">Sources</a>
+				<button
+					class="theme-toggle"
+					type="button"
+					data-theme-toggle
+					aria-pressed="false"
+					aria-label="Switch to dark mode"
+				>
+					<span class="theme-toggle-icon" aria-hidden="true">☾</span>
+					<span data-theme-label>Dark mode</span>
+				</button>
 			</nav>
 		</header>
 		<main id="main-content"><slot /></main>
@@ -38,12 +63,49 @@ const {
 			<p class="footer-note">
 				Independent historical project. Not affiliated with any listed institution or source.
 			</p>
+			<p class="footer-note">
+				Made by <a href="https://zane.im">Zane</a>
+			</p>
 		</footer>
+		<script is:inline>
+			const themeToggle = document.querySelector("[data-theme-toggle]");
+			const themeLabel = document.querySelector("[data-theme-label]");
+			const themeIcon = document.querySelector(".theme-toggle-icon");
+			const themeColor = document.querySelector("[data-theme-color]");
+
+			function updateTheme(theme) {
+				document.documentElement.dataset.theme = theme;
+				if (themeToggle) themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
+				if (themeToggle)
+					themeToggle.setAttribute(
+						"aria-label",
+						theme === "dark" ? "Switch to light mode" : "Switch to dark mode",
+					);
+				if (themeLabel) themeLabel.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+				if (themeIcon) themeIcon.textContent = theme === "dark" ? "☀" : "☾";
+				if (themeColor)
+					themeColor.setAttribute("content", theme === "dark" ? "#18241f" : "#f4f1e9");
+			}
+
+			if (themeToggle) {
+				updateTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+				themeToggle.addEventListener("click", () => {
+					const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+					try {
+						localStorage.setItem("asylum-atlas-theme", nextTheme);
+					} catch {
+						// The theme still applies for this page when storage is unavailable.
+					}
+					updateTheme(nextTheme);
+				});
+			}
+		</script>
 	</body>
 </html>
 <style is:global>
 	@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
 	:root {
+		color-scheme: light;
 		--ink: #19332f;
 		--ink-soft: #46625b;
 		--paper: #f4f1e9;
@@ -52,10 +114,34 @@ const {
 		--rust: #b95738;
 		--gold: #d49b42;
 		--sage: #718c7e;
+		--disabled: #a9ada5;
+		--map-surface: #e1e4da;
+		--map-gradient-start: #dfe4d9;
+		--map-gradient-end: #c9d2c6;
+		--overlay: rgba(251, 250, 246, 0.9);
+		--control-icon-filter: none;
 		--shadow: 0 12px 35px rgba(25, 51, 47, 0.09);
 		font-family: "DM Sans", system-ui, sans-serif;
 		color: var(--ink);
 		background: var(--paper);
+	}
+	:root[data-theme="dark"] {
+		color-scheme: dark;
+		--ink: #f1f1ef;
+		--ink-soft: #b8bbc0;
+		--paper: #18241f;
+		--card: #24302b;
+		--line: #42544d;
+		--rust: #e27755;
+		--gold: #e5b45f;
+		--sage: #8aac9a;
+		--disabled: #737d78;
+		--map-surface: #29362f;
+		--map-gradient-start: #35463e;
+		--map-gradient-end: #212f2a;
+		--overlay: rgba(36, 48, 43, 0.94);
+		--control-icon-filter: invert(1) opacity(0.85);
+		--shadow: 0 12px 35px rgba(0, 0, 0, 0.28);
 	}
 	* {
 		box-sizing: border-box;
@@ -119,6 +205,9 @@ const {
 		gap: 2rem;
 		border-bottom: 1px solid var(--line);
 	}
+	.site-header--flush {
+		border-bottom: 0;
+	}
 	.wordmark {
 		font-family: "Playfair Display", Georgia, serif;
 		font-size: 1.55rem;
@@ -137,6 +226,31 @@ const {
 	}
 	nav a {
 		text-decoration: none;
+	}
+	.theme-toggle {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		border: 1px solid var(--line);
+		border-radius: 2px;
+		padding: 0.45rem 0.6rem;
+		background: transparent;
+		color: var(--ink);
+		font:
+			500 0.68rem "DM Mono",
+			monospace;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+	.theme-toggle:hover {
+		border-color: var(--rust);
+		color: var(--rust);
+	}
+	.theme-toggle-icon {
+		font-size: 0.9rem;
+		line-height: 1;
 	}
 	main {
 		min-height: 70vh;
@@ -163,12 +277,15 @@ const {
 		align-items: start;
 	}
 	.footer-note {
-		grid-column: 1/-1;
+		/*grid-column: 1/-1;*/
 		margin: 1rem 0 0;
 		font-family: "DM Mono", monospace;
 		font-size: 0.68rem;
 		text-transform: uppercase;
 		letter-spacing: 0.04em;
+	}
+	.footer-note:last-child {
+		text-align: right;
 	}
 	.eyebrow {
 		color: var(--rust);
