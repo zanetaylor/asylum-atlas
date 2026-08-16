@@ -894,7 +894,7 @@
 		"city": "Indianapolis",
 		"state": "Indiana",
 		"stateCode": "IN",
-		"coordinates": { "lat": 39.7683331, "lng": -86.1583502, "precision": "approximate" },
+		"coordinates": { "lat": 39.770118756824594, "lng": -86.21324346414902, "precision": "approximate" },
 		"dates": { "opened": "1848", "completed": null, "closed": "1994" },
 		"architects": [],
 		"originalInstitution": "Indiana Hospital for the Insane",
