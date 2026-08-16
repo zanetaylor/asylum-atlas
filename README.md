@@ -1,18 +1,18 @@
 # Asylum Atlas
 
-Asylum Atlas is a static Astro prototype mapping verified former and surviving U.S. sites associated with the Kirkbride Plan. WIP.
+Asylum Atlas is a prototype mapping verified former and surviving US sites associated with the Kirkbride Plan. WIP.
 
 ## Development
 
-- Node 20+ and pnpm 11+ are recommended.
-- `pnpm install` installs dependencies.
-- `pnpm dev` starts the local Astro server.
-- `pnpm validate` checks site/source/image JSON before a build.
-- `pnpm check` runs Astro and TypeScript diagnostics.
-- `pnpm build` validates data and creates the static `dist/` site.
-- `pnpm test` runs unit tests.
-- `pnpm preview:worker` builds the site and serves it with Wrangler locally.
-- `pnpm deploy` builds the site and deploys `dist/` as Cloudflare Worker static assets. Authenticate first with `pnpm exec wrangler login`.
+- Node 20+ and pnpm 11+
+- `pnpm install` installs dependencies
+- `pnpm dev` starts the local Astro server
+- `pnpm validate` checks site/source/image JSON before a build
+- `pnpm check` runs Astro and TypeScript diagnostics
+- `pnpm build` validates data and creates the static `dist/` site
+- `pnpm test` runs unit tests
+- `pnpm preview:worker` builds the site and serves it with Wrangler locally
+- `pnpm deploy` builds the site and deploys `dist/` as Cloudflare Worker static assets. Authenticate first with `pnpm exec wrangler login`
 
 The map uses MapLibre GL and OpenFreeMap’s public style at runtime. The searchable result list remains useful if WebGL or the basemap is unavailable, and the full site record is shown in the map detail panel. Set `PUBLIC_MAP_STYLE_URL` to replace the style endpoint.
 
